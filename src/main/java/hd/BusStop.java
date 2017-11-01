@@ -3,17 +3,16 @@ package hd;
 public class BusStop {
 
     private float x;
-
     private float y;
 
-    private String name;
+    private String id;
 
     private int estimatedDriveTimeToNextStop;
 
-    public BusStop(float x, float y, String name, int estimatedDriveTimeToNextStop) {
+    public BusStop(float x, float y, String id, int estimatedDriveTimeToNextStop) {
         this.x = x;
         this.y = y;
-        this.name = name;
+        this.id = id;
         this.estimatedDriveTimeToNextStop = estimatedDriveTimeToNextStop;
     }
 
@@ -25,11 +24,12 @@ public class BusStop {
         return y;
     }
 
-    public String getName() {
-        return name;
+    public String getId() {
+        return id;
     }
 
     public int getEstimatedDriveTimeToNextStop() {
         return estimatedDriveTimeToNextStop;
     }
+
 }
